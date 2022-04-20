@@ -8,7 +8,7 @@ import { styled, alpha } from '@material-ui/core';
 import {InputBase , Box} from '@material-ui/core'
 import {Search} from '@material-ui/icons';
 import Footer from './Footer.js'
-import ChangeContext from './HomePage'
+
 
 
 const Searchs = styled('div')(({ theme }) => ({
@@ -117,9 +117,8 @@ function Products() {
   </CardContent>
     <CardActions disableSpacing className={classes.cardActions}>
      <IconButton aria-label = "Add to Cart">
-     <ChangeContext.Consumer>
-     <AddShoppingCart onClick = {method}/>
-     </ChangeContext.Consumer>
+     
+     <AddShoppingCart />
      
   </IconButton>
   <IconButton className = {classes.delete} aria-label = "Delete from Cart">

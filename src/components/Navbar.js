@@ -4,7 +4,6 @@ import {AddShoppingCart} from '@material-ui/icons'
 import logo from './icon.png';
 import useStyles from './Styles.js'
 import DrawerComponent from './Drawer';
-import ChangeContext from './HomePage'
 const Navbar = () => {
  
   //const [click, setclick] = useState(false);
@@ -39,10 +38,6 @@ const Navbar = () => {
      aria-label="menu"
    >
     <AddShoppingCart /> 
-    <ChangeContext.Consumer>
-    <p value = {add}></p>
-    </ChangeContext.Consumer> 
-    
    </IconButton>
       </Toolbar>
     
